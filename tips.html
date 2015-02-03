@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>News sentiment</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/3-col-portfolio.css" rel="stylesheet">
+    
+    <link href="../css/style_gh_pages.css" rel="stylesheet">
+
+
+
+<!--    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../">Portfolio</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../about.html">About</a>
+                    </li>
+                    <!--<li>-->
+                    <!--    <a href="#">Services</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--    <a href="#">Contact</a>-->
+                    <!--</li>-->
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/chrisjdavie/shares/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/chrisjdavie/shares/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <a id="forkme_banner" href="https://github.com/chrisjdavie/shares">View on GitHub</a>
+
+    <!-- Page Content -->
+    <div class="container">
+      
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Sentiment analysis on news
+                    <small>Machine learning to predict the sentiment of business news articles</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-lg-7">  
+                 <p>I compare the growth of shares recommended by the Telegraph against the growth of the FTSE 100, as competing investment strategies.  The growth is comparable over the month the code has been running, while the volatility of the Telegraph tips is much higher.</p>
+                 <p><i>Skills employed:  YQL, Python, SciPy, matplotlib, Numpy, nltk, statistics, web scraping, data cleaning, Matplotlib, project design, Linux</i></p>
+
+<p><img class="style-svg" src="images/end_of_day.svg" alt="Telegraph tips compared to the FTSE."></p>
+
+<p><em>A month of FTSE growth compared to the Telegraph tips.  The first image and method is at the end of every day, putting a unit of currency in any tips, the comparison the same but in the FTSE 100.</em></p>
+
+<h1>
+<a id="motivation" class="anchor" href="#motivation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Motivation</h1>
+
+<p>I’m comparing the growth of shares tipped by the Telegraph tipster Questor, with the growth of the FTSE 100 index.  This is mainly to develop a baseline growth to compare to any models I construct (all theoretical Physicists think they could beat the stock market), and also to learn about stock markets and finance, and improve my coding — I hadn't done text handling or web scraping before.</p>
+
+<h1>
+<a id="yql" class="anchor" href="#yql" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting stock prices</h1>
+
+<p>The share and index price comes from YQL, a free tool provided by Yahoo to search their data tables, one of which is finance.  It required a bit of reverse engineering of the genuine outputs and clever thinking about the Yahoo websites, but that wasn’t too hard.  It’s not the best form for doing this, the results needed a bit of cleaning, but I suspect a nicer version of this would be quite expensive.</p>
+
+<h1>
+<a id="comparisons" class="anchor" href="#comparisons" aria-hidden="true"><span class="octicon octicon-link"></span></a>Comparison methods</h1>
+
+The first method is at the end of every day, putting a unit of currency in any tips provided by Questor, the comparison the same but in the FTSE 100.  The second is equally dividing a unit of currency over any tips from the previous week, the comparison is the FTSE again.   Before plotting, both are normalised to the total money invested (as it varies with time) to allow the signal to be seen over the signal of more money being invested- the unitless ‘Change’ y-axes.
+
+The first method is the simplest I could think of, the second method is something close to what I might do.  I suspect there are a wide range of ways of doing this, if I was extending it I'd look them up.
+
+<h1>
+<a id="results" class="anchor" href="#results" aria-hidden="true"><span class="octicon octicon-link"></span></a>Results</h1>
+
+<p>The Telegraph tips and the FTSE shows comparable growth over the time considered, with much higher volatility from the tips.  Telegraph share tips don’t seem to be the way to go.</p>
+
+<p>I enjoyed it as a baseline, and YQL seems a sensible way of approaching tests of this sort of investment.</p>
+
+            </div>
+        </div>
+    
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Cookit maintained by <a href="https://github.com/chrisjdavie">chrisjdavie</a></p>
+                    <p>Copyright &copy; Chris J Davie, 2015</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

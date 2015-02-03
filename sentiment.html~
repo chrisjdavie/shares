@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>News sentiment</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/3-col-portfolio.css" rel="stylesheet">
+    
+    <link href="../css/style_gh_pages.css" rel="stylesheet">
+
+
+
+<!--    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../">Portfolio</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../about.html">About</a>
+                    </li>
+                    <!--<li>-->
+                    <!--    <a href="#">Services</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--    <a href="#">Contact</a>-->
+                    <!--</li>-->
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/chrisjdavie/shares/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/chrisjdavie/shares/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <a id="forkme_banner" href="https://github.com/chrisjdavie/shares">View on GitHub</a>
+
+    <!-- Page Content -->
+    <div class="container">
+      
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Sentiment analysis on news
+                    <small>Machine learning to predict the sentiment of business news articles</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-lg-7">  
+                 <p>I'm assessing machine learning for classifying the sentiment of articles in business sections of news websites.  The machine learning libraries quite effectively classify the sentiment of the articles and it's likely that will improve to a useful accuracy if given a few times larger training sample.</p>
+                 <p><i>Skills employed:  Machine learning, Python, scikit-learn, matplotlib, numpy, nltk, web scraping, data cleaning, Matplotlib, project design, Linux</i></p>
+
+<p><img class="style-svg" src="images/good_case.svg" alt="Machine learning successfully predicting the sentiment of a small sample."></p>
+
+<p><em>Results of a machine learning test. The top axis is the actual sentiment of the test sample, the left axis is the classification from the machine learning.</em></p>
+
+<h1>
+<a id="motivation" class="anchor" href="#motivation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Motivation</h1>
+
+<p>A database of news articles would perhaps be a powerful tool, and would be made even more useful if there was some automated sentiment analysis with the articles.  This seems like it should be a tractable problem, given there are words in English that communicate sentiment - debt', 'depression', 'FCA', for instance.</p>
+
+<p>I was also wondering how to invest my own money, and wondered if I could build a tool that would beat the standard investment strategies.  (It's a theoretical physicist thing - we all think we can beat the stock market.)  It's also for developing my own skills, data scientist jobs ads often like machine learning experience. </p>
+
+<h1>
+<a id="test data" class="anchor" href="#test data" aria-hidden="true"><span class="octicon octicon-link"></span></a>Test data</h1>
+
+<p>For the test data, I choose 99 articles from the business sections of news websites, classifying them as either 'good news' or 'bad news'. 99 articles is quite a small sample, but it's enough for this proof of principle.  Just two categories, 'good news' or 'bad news', is quite simple and can be quite subjective – if there was doubt, I tried to think in terms of the shareholders. </p>
+
+<h1>
+<a id="results" class="anchor" href="#results" aria-hidden="true"><span class="octicon octicon-link"></span></a>Results</h1>
+
+<p>The classifier always predicted the 'bad news' well, but inconsistently predicted the 'good news'.  This is similar to the comparison tutorial – at the same sample size, it reliably predicted the classification of one type of data but not the other.  This was probably due to the weightings assigned to vocabulary by the classifier for 'bad news' being clearer – words like 'debt', 'FCA', 'charges' and 'cost' often occurred in bad news story – the vocabulary for 'good news' wasn't as clear.</p>
+
+
+<h1>
+<a id="comparison" class="anchor" href="#comparison" aria-hidden="true"><span class="octicon octicon-link"></span></a>Comparison</h1>
+
+<p><i>scikits learn</i> comes built in with the Rotten Tomatoes database, which contains several thousand entries, each labelled with a sentiment.  For similar dataset sizes, the comparison database predicted the sentiment with similar accuracy, and the accuracy increased until around 2,000 articles.  This is encouraging for the extension of this project to larger sample sizes.</p>
+
+<h1>
+<a id="extensions" class="anchor" href="#extensions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Extensions</h1>
+
+<p>The main issue with this test was the sample size – 99 articles is too few.  The tutorial I compared to scaled well with increasing sample size, so it does give hope that this will also improve.  The classifier here improved from 50 samples to 99 samples, and should do so again.  More articles will also allow comparisons of more sophisticated classifiers, beyond the basic linear classifier used here.</p>
+
+<p>The second issue was concerning turning this into a useful too.  I didn't really know anything about data science when I set out, and the code would be challenging to extend (often it was the first solution that came to mind).  If I redid it, I'd do my web scraping using tools designed for that, not Python string comprehension, and use document databases as the store.  And probably other things differently, but those are the obvious ones.</p>
+
+            </div>
+        </div>
+    
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Cookit maintained by <a href="https://github.com/chrisjdavie">chrisjdavie</a></p>
+                    <p>Copyright &copy; Chris J Davie</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

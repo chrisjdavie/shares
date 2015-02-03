@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Cookit</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/3-col-portfolio.css" rel="stylesheet">
+    
+    <link href="../css/style_gh_pages.css" rel="stylesheet">
+
+
+
+<!--    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../">Portfolio</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../about.html">About</a>
+                    </li>
+                    <!--<li>-->
+                    <!--    <a href="#">Services</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--    <a href="#">Contact</a>-->
+                    <!--</li>-->
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/chrisjdavie/Cookit/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/chrisjdavie/Cookit/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <a id="forkme_banner" href="https://github.com/chrisjdavie/Cookit">View on GitHub</a>
+
+    <!-- Page Content -->
+    <div class="container">
+      
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    <small>Predicting the sentiment of business news articles</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-lg-7">  
+                 <p>I analysed open government data about the amount of food consumed by different groups in the UK.  This emphasised the need for health-based interventions in support of a funding bid for <a href="https://cookit.co/"><i>Cookit</i></a>, a new startup.</p>
+                 <p><i>Skills employed:  Python, Excel, data cleaning, Matplotlib, project design, Linux</i></p>
+
+<p><img src="images/ConsGORHH-12dec13_regions_.png" alt="Five-a-day consumed by region"></p>
+
+<p><em>Portions of Fruit and veg consumed in specific UK regions.</em></p>
+
+<h1>
+<a id="customer" class="anchor" href="#customer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Customer</h1>
+
+<p><i>Cookit</i> is a start up that does it's customers food shopping, automatically managing the food budget, selecting choosing healthy and sustainable ingredients and recipes that minimise food waste.  <i>Cookit</i> has just built its service and is currently seeking funding to improve and expand, and I worked with them in support of a specific bid.</p>
+
+<h1>
+<a id="challenge" class="anchor" href="#challenge" aria-hidden="true"><span class="octicon octicon-link"></span></a>Challenge</h1>
+
+<p><i>Cookit</i> entered the Nesta Open Food Data challenge, with a potential prize of £40,000.  They had to answer the question “How can we use open data to help people eat more healthily, eat more sustainably and/or have a more secure food chain?”  </p>
+
+<p>We focused on a single question, “How much of the 5 a day of fruit and vegetables is consumed by different socio-economic groups?”  There is a wealth of open data on food in the UK – after searching through these different sources, I found some very clean, accessible data published as part of the Family Food Survey, which could very easily answer this question.  The question itself links very closely to the ethos behind <i>Cookit</i> – providing affordable, easy and healthy food to anyone in the UK.</p>
+
+<h1>
+<a id="solution" class="anchor" href="#solution" aria-hidden="true"><span class="octicon octicon-link"></span></a>Solution</h1>
+
+<p>The Family Food Dataset focuses on the consumption habits of the UK population, and provided sufficient detail that I could find how much of the 5 a day is consumed by household income quintile, equivalised decile, age range of the household, the age when the person with the primary household income left school, by region in England and by country in the UK.  I wrote some code to extract the data from the datasets, and reformulate the data into the correct units and into a more accessible form.  My code also plotted the data as a series of bar charts, appropriate for the type of data and readily understood by quite a wide audience.</p>
+
+<h1>
+<a id="results" class="anchor" href="#results" aria-hidden="true"><span class="octicon octicon-link"></span></a>Results</h1>
+
+<p>Although the analysis successfully answered the question we set out to, unfortunately <i>Cookit</i> didn't win, coming a strongly contested 2nd in their heat.  This near-miss has provided <i>Cookit</i> with a number of useful contacts and potential sources for the vital funding.  They are also using this data in a whitepaper on the variation of eating habits with income across the UK, as part of obesity week. </p>
+            </div>
+        </div>
+    
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Cookit maintained by <a href="https://github.com/chrisjdavie">chrisjdavie</a></p>
+                    <p>Copyright &copy; Chris J Davie</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
