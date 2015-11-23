@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="News sentiment analysis">
     <meta name="author" content="Chris J. Davie">
 
-    <title>News sentiment</title>
+    <title>News sentiment analysis</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../css/bootstrap.css" rel="stylesheet">
@@ -46,6 +46,7 @@
                 </button>
                 <a class="navbar-brand" href="../">Home</a>
                 <a class="navbar-brand" href="../portfolio.html">Portfolio</a>
+                <a class="navbar-brand" href="../testimonials.html">Testimonials</a>                
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -100,7 +101,7 @@
 
 <p>A database of news articles would perhaps be a powerful tool, and would be made even more useful if there was some automated sentiment analysis with the articles.  This seems like it should be a tractable problem, given there are words in English that communicate sentiment - debt', 'depression', 'FCA', for instance.</p>
 
-<p>I was also wondering how to invest my own money, and wondered if I could build a tool that would beat the standard investment strategies.  (It's a theoretical physicist thing - we all think we can beat the stock market.)  It's also for developing my own skills, data scientist jobs ads often like machine learning experience. </p>
+<p>I was also wondering how to invest my own money, and wondered if I could build a tool that would beat the standard investment strategies.  It's also for developing my own skills, data scientist jobs ads often like machine learning experience. </p>
 
 <h1>
 <a id="test data" class="anchor" href="#test data" aria-hidden="true"><span class="octicon octicon-link"></span></a>Test data</h1>
